@@ -4,8 +4,8 @@ CREATE TABLE IF NOT EXISTS portfolio_stock (
     symbol TEXT NOT NULL,
     quantity REAL NOT NULL,
     buy_price REAL NOT NULL,
-    buy_date TEXT NOT NULL,
-    sector TEXT DEFAULT 'Unknown'
+    buy_date TEXT,
+    sector TEXT
 );
 
 -- Simple index for symbol lookups
