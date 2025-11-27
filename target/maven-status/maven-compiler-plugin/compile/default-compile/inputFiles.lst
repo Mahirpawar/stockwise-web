@@ -1,0 +1,14 @@
+C:\stockwise-web\src\main\java\com\stockwise\config\DataInitializer.java
+C:\stockwise-web\src\main\java\com\stockwise\controller\WebController.java
+C:\stockwise-web\src\main\java\com\stockwise\model\Portfolio.java
+C:\stockwise-web\src\main\java\com\stockwise\model\Stock.java
+C:\stockwise-web\src\main\java\com\stockwise\repository\PortfolioRepository.java
+C:\stockwise-web\src\main\java\com\stockwise\service\MarketDataService.java
+C:\stockwise-web\src\main\java\com\stockwise\service\MockMarketDataService.java
+C:\stockwise-web\src\main\java\com\stockwise\service\PortfolioAnalysisService.java
+C:\stockwise-web\src\main\java\com\stockwise\service\ReportService.java
+C:\stockwise-web\src\main\java\com\stockwise\service\SuggestionService.java
+C:\stockwise-web\src\main\java\com\stockwise\service\YahooMarketDataService.java
+C:\stockwise-web\src\main\java\com\stockwise\StockwiseApplication.java
+C:\stockwise-web\src\main\java\com\stockwise\util\CSVUtil.java
+C:\stockwise-web\src\main\java\com\stockwise\util\YahooSymbolMapper.java

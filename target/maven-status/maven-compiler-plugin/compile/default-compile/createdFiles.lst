@@ -1,0 +1,15 @@
+com\stockwise\service\SuggestionService.class
+com\stockwise\util\CSVUtil.class
+com\stockwise\repository\PortfolioRepository.class
+com\stockwise\config\DataInitializer.class
+com\stockwise\service\MockMarketDataService.class
+com\stockwise\StockwiseApplication.class
+com\stockwise\controller\WebController.class
+com\stockwise\service\YahooMarketDataService$CacheEntry.class
+com\stockwise\model\Stock.class
+com\stockwise\util\YahooSymbolMapper.class
+com\stockwise\service\MarketDataService.class
+com\stockwise\model\Portfolio.class
+com\stockwise\service\PortfolioAnalysisService.class
+com\stockwise\service\YahooMarketDataService.class
+com\stockwise\service\ReportService.class
