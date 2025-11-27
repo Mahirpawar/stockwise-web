@@ -10,7 +10,7 @@
     <version>1.0.0</version>
 
     <properties>
-        <java.version>21</java.version>
+        <java.version>17</java.version>
         <spring.boot.version>3.2.0</spring.boot.version>
     </properties>
 
@@ -30,9 +30,6 @@
             <version>${spring.boot.version}</version>
         </dependency>
 
-        <!-- REMOVE spring-boot-starter-jdbc (CAUSES THE ERROR) -->
-        <!-- REMOVE spring-boot-starter-webflux (NOT REQUIRED) -->
-
         <!-- SQLite JDBC driver -->
         <dependency>
             <groupId>org.xerial</groupId>
@@ -47,7 +44,7 @@
             <version>1.10.0</version>
         </dependency>
 
-        <!-- JSON optional -->
+        <!-- JSON -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -59,13 +56,31 @@
     <build>
         <plugins>
 
-            <!-- Spring Boot plugin -->
+            <!-- REQUIRED: Makes the JAR executable -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <mainClass>com.stockwise.StockwiseApplication</mainClass>
+                </configuration>
+            </plugin>
+
+            <!-- REQUIRED: Compile with correct Java version -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
 
